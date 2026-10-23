@@ -190,15 +190,16 @@
              val corner =
 --- a/core/java/android/provider/Settings.java
 +++ b/core/java/android/provider/Settings.java
-@@ -12737,6 +12737,11 @@
-         public static final String QS_TILES = "sysui_qs_tiles";
+@@ -5532,6 +5532,12 @@
+         public static final String SCREEN_OFF_TIMEOUT = "screen_off_timeout";
  
          /**
 +         * Customize QS tile shape.
++         * @hide
 +         */
 +        public static final String QS_TILE_SHAPE = "qs_tile_shape";
 +
 +        /**
-          * Whether this user has enabled Quick controls.
+          * The screen backlight brightness between 1 (minimum) and 255 (maximum).
           *
-          * 0 indicates disabled and 1 indicates enabled. A non existent value should be treated as
+          * Use {@link android.view.WindowManager.LayoutParams#screenBrightness} to set the screen
