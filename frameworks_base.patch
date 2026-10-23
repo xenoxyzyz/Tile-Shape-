@@ -190,12 +190,11 @@
              val corner =
 --- a/core/java/android/provider/Settings.java
 +++ b/core/java/android/provider/Settings.java
-@@ -12737,6 +12737,12 @@
+@@ -12737,6 +12737,11 @@
          public static final String QS_TILES = "sysui_qs_tiles";
  
          /**
 +         * Customize QS tile shape.
-+         * @hide
 +         */
 +        public static final String QS_TILE_SHAPE = "qs_tile_shape";
 +
