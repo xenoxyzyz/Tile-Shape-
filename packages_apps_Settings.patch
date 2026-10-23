@@ -1,0 +1,17 @@
+--- a/res/xml/display_settings.xml
++++ b/res/xml/display_settings.xml
+@@ -292,4 +292,14 @@
+             android:title="@string/display_vr_pref_title"
+             android:fragment="com.android.settings.display.VrDisplayPreferencePicker"/>
+     </PreferenceCategory>
++
++    <PreferenceCategory android:title="@string/tile_shape_category_title">
++        <org.lineageos.settings.preferences.SystemSettingListPreference
++            android:key="qs_tile_shape"
++            android:title="@string/tile_shape_title"
++            android:entries="@array/tile_shape_entries"
++            android:entryValues="@array/tile_shape_values"
++            android:summary="%s"
++            android:defaultValue="0" />
++    </PreferenceCategory>
+ </PreferenceScreen>
